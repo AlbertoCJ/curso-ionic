@@ -1,0 +1,17 @@
+
+1. Restricted: ningún script será ejecutado. Como comentaba anteriormente, esta es la configuración predeterminada.
+
+2. RemoteSigned: permiten ejecutar los scripts creados localmente con firma remota. Los scripts que se crearon en otra máquina no se ejecutarán a menos que estén firmados por un editor de confianza.
+
+3. AllSigned: los scripts solo se ejecutarán si está firmado por un editor de confianza. Aquí también se incluyen los scripts creados localmente.
+
+4. Unrestricted: todos los scripts se ejecutarán, da igual quién los haya creado y si están o no firmados. 
+
+COMMANDS:
+---------
+
+Get-ExecutionPolicy -List
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser ​
+
+Set-ExecutionPolicy Restricted -Scope CurrentUser ​
